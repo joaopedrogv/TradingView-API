@@ -128,5 +128,6 @@ module.exports = (quoteSession) => class QuoteMarket {
       ]);
     }
     delete this.#symbolListeners[this.#symbolKey][this.#symbolListenerID];
+    delete this.#symbolListeners[this.#symbolKey];
   }
 };
