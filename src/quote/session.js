@@ -25,6 +25,9 @@ const quoteMarketConstructor = require('./market');
  * | 'basic_eps_net_income' | 'beta_1_year' | 'market_cap_basic'
  * | 'earnings_per_share_basic_ttm' | 'price_earnings_ttm'
  * | 'sector' | 'dividends_yield' | 'timezone' | 'country_code'
+ * | 'dividend_amount_h' | 'dividend_record_date_h'
+ * | 'dividend_type_h' | 'dividend_payment_date_h'
+ * | 'dividend_ex_date_h'
  * } quoteField Quote data field
  */
 
@@ -47,7 +50,9 @@ function getQuoteFields(fieldsType) {
     'basic_eps_net_income', 'beta_1_year', 'market_cap_basic',
     'earnings_per_share_basic_ttm', 'price_earnings_ttm',
     'sector', 'dividends_yield', 'timezone', 'country_code',
-    'provider_id',
+    'provider_id', 'dividend_amount_h', 'dividend_record_date_h',
+    'dividend_type_h', 'dividend_payment_date_h',
+    'dividend_ex_date_h'
   ];
 }
 
